@@ -12,9 +12,9 @@ database
 
 
 html
-[]create inputs for to-do item
-[]create add button 
-[]table body id
+[x]create inputs for to-do item
+[x]create add button 
+[x]table body id
 
 css
 []background color body
@@ -29,11 +29,11 @@ client
 []post route for posting new input to database
 []put route for changing task item to complete when button is clicked
 []delete route for deleting item when button is clicked
-[]jquery
+[x]jquery
 
 server
-[]server js for app using express
-[]pool js for for server using pool 
+[x]server js for app using express
+[x]pool js for for server using pool 
 []router js for router routes
     []get route
     []post route
