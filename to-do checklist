@@ -1,0 +1,42 @@
+set up
+[]git ignore
+[]install express
+[]install pg 
+[]install body parser
+
+database
+[] create table in database postico: 'weekend-to-do-app'
+    []id
+    []task
+    []complete?
+
+
+html
+[]create inputs for to-do item
+[]create add button 
+[]table body id
+
+css
+[]background color body
+[]background color change when task is complete
+[]change font family and size
+[]item checked off when complete
+
+client
+[]delete button
+[]complete button
+[]get route for getting to-do list on database and putting on dom 
+[]post route for posting new input to database
+[]put route for changing task item to complete when button is clicked
+[]delete route for deleting item when button is clicked
+[]jquery
+
+server
+[]server js for app using express
+[]pool js for for server using pool 
+[]router js for router routes
+    []get route
+    []post route
+    []put route
+    []delete route
+
