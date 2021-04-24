@@ -73,12 +73,12 @@ function completeTaskHandler() {
     completeTask($(this).data("id"));
 }//end completeTaskHandler
 
-function completeTask(itemId) {
+function completeTask(taskId) {
     //update task to signify complete when button clicked
 
     $.ajax({
         method: 'PUT',
-        url: `/tasks/${itemId}`,
+        url: `/tasks/${taskId}`,
     })
         .then(function (response) {
             getTasks();
@@ -87,3 +87,23 @@ function completeTask(itemId) {
             alert('error on put route client', error);
         })
 }//end completeTask
+
+function deleteTaskHandler() {
+    console.log('delete button clicked');
+    deleteTask($(this).data("id"));
+}//end deleteTaskHandler
+
+function deleteTask(taskId) {
+    //delete task when delete button clicked
+    $.ajax({
+        method: 'DELETE',
+        url: `/tasks/${taskId}`,
+    })
+        .then(function (response) {
+            //refresh task list
+            getTasks();
+        })
+        .catch(function (error) {
+            alert('error on deleting task', error);
+        });
+}//end deleteTask
