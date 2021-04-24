@@ -1,14 +1,14 @@
 set up
-[]git ignore
-[]install express
-[]install pg 
-[]install body parser
+[x]git ignore
+[x]install express
+[x]install pg 
+[x]install body parser
 
 database
-[] create table in database postico: 'weekend-to-do-app'
-    []id
-    []task
-    []complete?
+[x] create table in database postico: 'weekend-to-do-app'
+    [x]id
+    [x]task
+    [x]complete?
 
 
 html
