@@ -6,6 +6,8 @@ function readyNow() {
     console.log('JQ');
     //establish click listeners
     setUpClickListeners();
+    //render tasks on DOM on page load
+    getTasks();
 } // end readyNow
 
 function setUpClickListeners() {
@@ -39,4 +41,29 @@ function postTask (){
 }
 
 //get tasks from server 
-function getTasks
+function getTasks(){
+    $('#viewTasks').empty();
+
+    $.ajax({
+        type: 'GET',
+        url: '/tasks',
+    })
+    .then( function (response){
+        console.log('getting tasks from server' , response);
+        //append tasks to DOM
+        for (let i=0; i<response.length; i++){
+            ('#viewTasks').append(`
+                <tr>
+                    <td>${response[i].task}</td>
+                    <td>
+                        <button class="completeButton" data-id="${response[i].id}>Complete</button>
+                    </td>
+                    <td>
+                        <button class="deleteButton" data-id="${response[i].id}>Delete</button>
+                    </td>
+                </tr>
+            `);
+        }
+    
+    });
+}
