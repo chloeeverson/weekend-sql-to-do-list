@@ -52,19 +52,30 @@ function getTasks() {
             console.log('getting tasks from server', response);
             //append tasks to DOM
             for (let i = 0; i < response.length; i++) {
-                $('#viewTasks').append(`
+                if (response[i].complete === true) {
+                    $('#viewTasks').append(`
                     <tr>
                         <td id="${response[i].complete}">${response[i].task}</td>
-                        <td>
-                            <button type="button" class="completeButton" data-id="${response[i].id}">Complete</button>
-                        </td>
                         <td>
                             <button class="deleteButton" data-id="${response[i].id}">Delete</button>
                         </td>
                     </tr>
                 `);
+                } 
+                else {
+                    $('#viewTasks').append(`
+                    <tr>
+                        <td id="${response[i].complete}">${response[i].task}</td>
+                        <td>
+                        <button class="deleteButton" data-id="${response[i].id}">Delete</button>
+                    </td>
+                        <td>
+                            <button type="button" class="completeButton" data-id="${response[i].id}">Complete</button>
+                        </td>
+                    </tr>
+                `);
+                }
             }
-
         });
 }//end getTasks
 

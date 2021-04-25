@@ -1,3 +1,57 @@
+body {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #0496FF;
+}
+
+header {
+    padding: 20px;
+    padding-top: 15px;
+    font-size: 20px;
+    
+}
+
+#taskIn, #addButton {
+    font-size: 15px;
+    padding: 5px;
+}
+
+#list {
+    margin-top: 40px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+#center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+tr {
+    text-align: center;
+    padding: 10px;
+}
+
+
 #true {
-    background-color: lime;
+    background-color: #7ddf64;
+    text-decoration: line-through;
+    padding: 3px;
+}
+
+#false {
+    background-color: white;
+}
+
+button:hover:active {
+    background-color: white;
+    border: none;
+    text-decoration: none;
+    padding: 10px;
+}
+
+button {
+    padding: 3px;
 }

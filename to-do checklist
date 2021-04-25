@@ -17,26 +17,26 @@ html
 [x]table body id
 
 css
-[]background color body
-[]background color change when task is complete
-[]change font family and size
-[]item checked off when complete
+[x]background color body
+[x]background color change when task is complete
+[x]change font family and size
+[x]item checked off when complete
 
 client
-[]delete button
-[]complete button
-[]get route for getting to-do list on database and putting on dom 
-[]post route for posting new input to database
-[]put route for changing task item to complete when button is clicked
-[]delete route for deleting item when button is clicked
+[x]delete button
+[x]complete button
+[x]get route for getting to-do list on database and putting on dom 
+[x]post route for posting new input to database
+[x]put route for changing task item to complete when button is clicked
+[x]delete route for deleting item when button is clicked
 [x]jquery
 
 server
 [x]server js for app using express
 [x]pool js for for server using pool 
-[]router js for router routes
-    []get route
-    []post route
-    []put route
-    []delete route
+[x]router js for router routes
+    [x]get route
+    [x]post route
+    [x]put route
+    [x]delete route
 
